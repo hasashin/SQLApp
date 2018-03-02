@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ObrebSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 67</value>
+  </data>
+  <data name="ObrebSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ObrebSelectCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectCombo.Name" xml:space="preserve">
+    <value>ObrebSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectCombo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ObrebSelectLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ObrebSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 70</value>
+  </data>
+  <data name="ObrebSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="ObrebSelectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ObrebSelectLabel.Text" xml:space="preserve">
+    <value>Obręb</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectLabel.Name" xml:space="preserve">
+    <value>ObrebSelectLabel</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;ObrebSelectLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="aliasLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aliasLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 159</value>
+  </data>
+  <data name="aliasLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="aliasLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="aliasLabel.Text" xml:space="preserve">
+    <value>Alias:</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.Name" xml:space="preserve">
+    <value>aliasLabel</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="aliasTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 156</value>
+  </data>
+  <data name="aliasTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="aliasTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.Name" xml:space="preserve">
+    <value>aliasTextBox</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
+    <value>progressBar1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Name" xml:space="preserve">
+    <value>GoButton</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;GoButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Name" xml:space="preserve">
+    <value>ObjectCountTBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Name" xml:space="preserve">
+    <value>ObjectCountLabel</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ObjectsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 197</value>
+  </data>
+  <data name="ObjectsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 122</value>
+  </data>
+  <data name="ObjectsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="ObjectsGroupBox.Text" xml:space="preserve">
+    <value>Obiekty</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.Name" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Name" xml:space="preserve">
+    <value>SystematicsSelectButton</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Name" xml:space="preserve">
+    <value>JEwidencyjnaSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Name" xml:space="preserve">
+    <value>JEwidencyjnaLabel</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Name" xml:space="preserve">
+    <value>PowiatSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Name" xml:space="preserve">
+    <value>PowiatLabel</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SystematykaGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 3</value>
+  </data>
+  <data name="SystematykaGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 131</value>
+  </data>
+  <data name="SystematykaGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="SystematykaGroup.Text" xml:space="preserve">
+    <value>Systematyka</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Name" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelRoboczy.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelRoboczy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="panelRoboczy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 334</value>
+  </data>
+  <data name="panelRoboczy.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Name" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 85</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 23</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
+    <value>progressBar1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GoButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GoButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 56</value>
+  </data>
+  <data name="GoButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="GoButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GoButton.Text" xml:space="preserve">
+    <value>Zamień</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Name" xml:space="preserve">
+    <value>GoButton</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;GoButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ObjectCountTBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 26</value>
+  </data>
+  <data name="ObjectCountTBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 20</value>
+  </data>
+  <data name="ObjectCountTBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ObjectCountTBox.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Name" xml:space="preserve">
+    <value>ObjectCountTBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ObjectCountLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ObjectCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 29</value>
+  </data>
+  <data name="ObjectCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 13</value>
+  </data>
+  <data name="ObjectCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ObjectCountLabel.Text" xml:space="preserve">
+    <value>Ilość obiektów do zmiany</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Name" xml:space="preserve">
+    <value>ObjectCountLabel</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SystematicsSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 94</value>
+  </data>
+  <data name="SystematicsSelectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="SystematicsSelectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="SystematicsSelectButton.Text" xml:space="preserve">
+    <value>Wybierz</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Name" xml:space="preserve">
+    <value>SystematicsSelectButton</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="JEwidencyjnaSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 40</value>
+  </data>
+  <data name="JEwidencyjnaSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 21</value>
+  </data>
+  <data name="JEwidencyjnaSelectCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Name" xml:space="preserve">
+    <value>JEwidencyjnaSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="JEwidencyjnaLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="JEwidencyjnaLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="JEwidencyjnaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 43</value>
+  </data>
+  <data name="JEwidencyjnaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="JEwidencyjnaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="JEwidencyjnaLabel.Text" xml:space="preserve">
+    <value>Jednostka Ewid.</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Name" xml:space="preserve">
+    <value>JEwidencyjnaLabel</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PowiatSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 13</value>
+  </data>
+  <data name="PowiatSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 21</value>
+  </data>
+  <data name="PowiatSelectCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Name" xml:space="preserve">
+    <value>PowiatSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PowiatLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PowiatLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PowiatLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 16</value>
+  </data>
+  <data name="PowiatLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="PowiatLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PowiatLabel.Text" xml:space="preserve">
+    <value>Powiat</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Name" xml:space="preserve">
+    <value>PowiatLabel</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SQLSrvNameTBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 10</value>
+  </data>
+  <data name="SQLSrvNameTBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 20</value>
+  </data>
+  <data name="SQLSrvNameTBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameTBox.Name" xml:space="preserve">
+    <value>SQLSrvNameTBox</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameTBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameTBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameTBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="SQLSrvNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SQLSrvNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SQLSrvNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 13</value>
+  </data>
+  <data name="SQLSrvNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="SQLSrvNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="SQLSrvNameLabel.Text" xml:space="preserve">
+    <value>Nazwa serwera SQL</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameLabel.Name" xml:space="preserve">
+    <value>SQLSrvNameLabel</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SQLSrvNameLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ConnectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 65</value>
+  </data>
+  <data name="ConnectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 23</value>
+  </data>
+  <data name="ConnectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ConnectButton.Text" xml:space="preserve">
+    <value>Połącz</value>
+  </data>
+  <data name="&gt;&gt;ConnectButton.Name" xml:space="preserve">
+    <value>ConnectButton</value>
+  </data>
+  <data name="&gt;&gt;ConnectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConnectButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ConnectButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DBSelectLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DBSelectLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DBSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 68</value>
+  </data>
+  <data name="DBSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="DBSelectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="DBSelectLabel.Text" xml:space="preserve">
+    <value>Nazwa bazy danych</value>
+  </data>
+  <data name="&gt;&gt;DBSelectLabel.Name" xml:space="preserve">
+    <value>DBSelectLabel</value>
+  </data>
+  <data name="&gt;&gt;DBSelectLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DBSelectLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DBSelectLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 435</value>
+  </data>
+  <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="CloseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="CloseButton.Text" xml:space="preserve">
+    <value>Zakończ</value>
+  </data>
+  <data name="&gt;&gt;CloseButton.Name" xml:space="preserve">
+    <value>CloseButton</value>
+  </data>
+  <data name="&gt;&gt;CloseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CloseButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CloseButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DBSelectCombo.Items" xml:space="preserve">
+    <value>Kępno</value>
+  </data>
+  <data name="DBSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 65</value>
+  </data>
+  <data name="DBSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 21</value>
+  </data>
+  <data name="DBSelectCombo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DBSelectCombo.Name" xml:space="preserve">
+    <value>DBSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;DBSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DBSelectCombo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DBSelectCombo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SQLPasswdTBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 36</value>
+  </data>
+  <data name="SQLPasswdTBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 20</value>
+  </data>
+  <data name="SQLPasswdTBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdTBox.Name" xml:space="preserve">
+    <value>SQLPasswdTBox</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdTBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdTBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdTBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SQLPasswdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SQLPasswdLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SQLPasswdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 41</value>
+  </data>
+  <data name="SQLPasswdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="SQLPasswdLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="SQLPasswdLabel.Text" xml:space="preserve">
+    <value>Hasło</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdLabel.Name" xml:space="preserve">
+    <value>SQLPasswdLabel</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SQLPasswdLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="StateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 440</value>
+  </data>
+  <data name="StateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="StateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;StateLabel.Name" xml:space="preserve">
+    <value>StateLabel</value>
+  </data>
+  <data name="&gt;&gt;StateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StateLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StateLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>384, 469</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Zamiana SQL</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
