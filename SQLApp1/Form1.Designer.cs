@@ -240,7 +240,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelRoboczy.ResumeLayout(false);
             this.panelRoboczy.PerformLayout();
