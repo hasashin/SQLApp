@@ -10,6 +10,7 @@ namespace DataManip
     public static class DataManip
     {
         private static List<int> ListaIDArkuszy = new List<int>();
+        public static Dictionary<int, int> SłownikIDTypow = new Dictionary<int, int>();
         public static string GenerateSearchIDs()
         {
             string str = "";
@@ -24,6 +25,16 @@ namespace DataManip
             DataTable dt = new DataTable();
             dt.Load(rd);
             return dt;
+        }
+
+        public static void initDictionaryIDs()
+        {
+            OdbcDataReader data = SqlConnect.ExecuteDataReader("c_ordering_number, c_ID", "DictionaryEntryTbl", "c_dictionary_def_ID = 1 ORDER BY c_ordering_number");
+            while (data.Read())
+            {
+                SłownikIDTypow.Add(int.Parse(data["c_ordering_number"].ToString()),int.Parse(data["c_ID"].ToString()));
+            }
+            data.Close();
         }
 
         public static void FillPowiatSelectCombo(ComboBox PowiatSelectCombo)
@@ -86,7 +97,10 @@ namespace DataManip
         }
         public static string GenerateDocumentPath()
         {
-            return Obreb.parentnazwa+"\\";
+            string opis = Obreb.opis;
+            opis = opis.ToLower();
+            opis = opis[0].ToString().ToUpper() + opis.Substring(1);
+            return "Gm. " + Obreb.parentnazwa+"\\"+opis+"\\";
         }
         public static void WyszukajArkusze()
         {

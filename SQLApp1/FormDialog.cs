@@ -18,9 +18,9 @@ namespace SQLApp1
         {
             return NameTBox.Text;
         }
-        public string GetGoodDesc()
+        public int GetGoodDesc()
         {
-            return CorrectDescTBox.Text;
+            return int.Parse(CorrectDescCombo.Text.Substring(0,1));
         }
         public int GetGoodType()
         {
@@ -49,6 +49,14 @@ namespace SQLApp1
         {
             DialogResult = DialogResult.Ignore;
             Close();
+        }
+
+        private void FormDialog_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 6; i++)
+            {
+                CorrectDescCombo.Items.Add(i + " " + geodezja.geodezja.getDescription(i));
+            }
         }
     }
 }

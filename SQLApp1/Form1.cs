@@ -20,23 +20,6 @@ namespace SQLApp1
             InitializeComponent();
             StateLabel.Text = "Nie połączono z bazą danych";
         }
-
-        private Tuple<string,int, string> AskForBadString(string wrong)
-        {
-            FormDialog dialog = new FormDialog(wrong);
-            if(dialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string name = dialog.GetGoodName();
-                int type = dialog.GetGoodType();
-                string desc = dialog.GetGoodDesc();
-                return new Tuple<string,int,string>(name,type,desc);
-            }
-            else
-            {
-                throw new Exception("Anulowano");
-            }
-        }
-
         
         private void EnableWork()
         {
@@ -91,6 +74,8 @@ namespace SQLApp1
                         rd.Read();
                         cCodeID = int.Parse(rd["c_ID"].ToString());
                         rd.Close();
+                        DataManip.DataManip.initDictionaryIDs();
+                        
                     }
                     else
                     {
@@ -129,7 +114,7 @@ namespace SQLApp1
             }
             DBSelectCombo.SelectedIndex = 0;
             aliasTextBox.Text = geodezja.geodezja.DocumentsAlias;
-            geodezja.geodezja.
+            geodezja.geodezja.setDescriptions();
         }
 
         private void PowiatSelectCombo_SelectedIndexChanged(object sender, EventArgs e)

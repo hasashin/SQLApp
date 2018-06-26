@@ -5,65 +5,95 @@ using SQLConnections;
 using System.Data.Odbc;
 using System.Windows.Forms;
 using SQLApp1;
+using System.IO;
 
 namespace SQLManip
 {
     class SQLManip
     {
-        private static void FillList(DataRow row)
+        private static List<Tuple<string, int, int>> FillList(DataRow row)
         {
-            List<Tuple<string, int, string>> tempList = new List<Tuple<string, int, string>>();
+            // nazwa | opis | typ
+            List<Tuple<string, int, int>> tempList = new List<Tuple<string, int, int>>();
             string rawValue = row["c_value"].ToString().Substring(1);
+            string[] fileEntries = rawValue.Split(';');
+            foreach (string plik in fileEntries)
+            {
+                if (plik == "") continue;
+                string[] dane = plik.Split(':');
+                tempList.Add(new Tuple<string, int, int>(dane[0], int.Parse(dane[1]), int.Parse(dane[2])));
+            }
+            return tempList;
         }
+
+        private static Tuple<string,int,int> execDialog(Tuple<string,int,int> wrong, Form parent)
+        {
+            FormDialog dlg = new FormDialog(wrong.Item1 + " " + wrong.Item2 + " " + wrong.Item3);
+            DialogResult result = dlg.ShowDialog(parent);
+            if (result == DialogResult.OK) return new Tuple<string, int, int>(dlg.GetGoodName(), dlg.GetGoodDesc(), dlg.GetGoodType());
+            else if (result == DialogResult.Ignore) return wrong;
+            else return null;
+        }
+
+        private static bool insertRow(string c_ID, Tuple<string,int,int> doc)
+        {
+            string docPath = DataManip.DataManip.GenerateDocumentPath();
+            string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item2) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+            return SqlConnect.ExecuteCommand(command);
+        }
+
         public static void WstawPliki(DataTable dt, ProgressBar progressBar1, Form parent)
         {
+            StreamWriter log = File.CreateText("raport.log");
             int i = 0;
             if (dt != null)
             {
-                string opis;
-                List<Tuple<string, int, string>> docs = new List<Tuple<string, int, string>>();
+
+                List<Tuple<string, int, int>> docs;
                 OdbcCommand cmd = new OdbcCommand();
                 foreach (DataRow dr in dt.Rows)
                 {
-                    progressBar1.Value = i/dt.Rows.Count;
-                    opis = dr["c_value"].ToString().Substring(1);
-                    string[] pliki = opis.Split(';');
-                    docs.Clear();
-                    foreach (string plik in pliki)
+                    log.WriteLine("Obiekt " + dr["c_ID"].ToString() + ":");
+                    docs = FillList(dr);
+                    progressBar1.Value = i / dt.Rows.Count;
+
+                    foreach (Tuple<string, int, int> doc in docs)
                     {
-                        if (plik == "") continue;
-                        string[] dane = plik.Split(':');
-                        docs.Add(new Tuple<string, int, string>(dane[0], int.Parse(dane[2]), dane[1]));
-                    }
-                    foreach (Tuple<string, int, string> doc in docs)
-                    {
-                        string docPath = DataManip.DataManip.GenerateDocumentPath();
-                        string command;
-                        if (doc.Item3 == "") command = "INSERT INTO DocumentTbl VALUES (" + dr["c_ID"].ToString() + ",'" + doc.Item1 + "',NULL,'" + docPath + doc.Item1 + ".pdf'," + doc.Item2.ToString() + ",'"+geodezja.geodezja.DocumentsAlias+"',1)";
-                        else command = "INSERT INTO DocumentTbl VALUES (" + dr["c_ID"].ToString() + ",'" + doc.Item1 + "'," + doc.Item3 + ",'" + docPath + doc.Item1 + ".pdf'," + doc.Item2.ToString() + ",'"+geodezja.geodezja.DocumentsAlias+"',1)";
-                        if (!SqlConnect.ExecuteCommand(command))
+                        log.Write("\tPlik '" + doc.Item1 + "': ");
+                        try
                         {
-                            FormDialog dlg = new FormDialog(doc.Item1 + " " + doc.Item2 + " " + doc.Item3);
-                            DialogResult result = dlg.ShowDialog(parent);
-                            if (result == DialogResult.OK)
+                            if (insertRow(dr["c_ID"].ToString(), doc))
                             {
-                                string Item1 = dlg.GetGoodName();
-                                int Item2 = dlg.GetGoodType();
-                                string Item3 = dlg.GetGoodDesc();
-                                if (Item3 == "") command = "INSERT INTO DocumentTbl VALUES (" + dr["c_ID"].ToString() + ",'" + doc.Item1 + "',NULL,'" + docPath + doc.Item1 + ".pdf'," + doc.Item2.ToString() + ",'"+geodezja.geodezja.DocumentsAlias+"',1)";
-                                else command = "INSERT INTO DocumentTbl VALUES (" + dr["c_ID"].ToString() + ",'" + doc.Item1 + "'," + doc.Item3 + ",'" + docPath + doc.Item1 + ".pdf'," + doc.Item2.ToString() + ",'"+geodezja.geodezja.DocumentsAlias+"',1)";
-                                if (!SqlConnect.ExecuteCommand(command))
+                                log.WriteLine("Powodzenie. ");
+
+                            }
+                            else
+                            {
+                                log.Write("Niepowodzenie. Druga próba: ");
+                                if (insertRow(dr["c_ID"].ToString(), execDialog(doc, parent)))
                                 {
-                                    MessageBox.Show("Nie udało się zapisać pliku do bazy", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    continue;
+                                    log.WriteLine("Powodzenie. ");
+                                }
+                                else
+                                {
+                                    log.WriteLine("Niepowodzenie. ");
+                                    MessageBox.Show("Nie udało się zapisać pliku '" + doc.Item1 + "' do bazy", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             }
-                            else if (result == DialogResult.Ignore) continue;
-                            else return;
+                        }
+                        catch (Exception e)
+                        {
+                            MessageBox.Show(parent, e.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
-                    if (!SqlConnect.ExecuteCommand("DELETE FROM RemarkTbl WHERE c_object_ID =" + dr["c_ID"].ToString()))
+                    if (SqlConnect.ExecuteCommand("DELETE FROM RemarkTbl WHERE c_object_ID =" + dr["c_ID"].ToString()))
+                        log.WriteLine("\tUsunięcie pola uwag z obiektu " + dr["c_ID"].ToString() + " powiodło się.");
+                    else
+                    {
+                        log.WriteLine("\tUsunięcie pola uwag z obiektu " + dr["c_ID"].ToString() + " nie powiodło się.");
                         MessageBox.Show("Nie można usunąć danych pola 'Uwagi' z obiektu nr: " + dr["c_ID"].ToString());
+                    }
+
                     i++;
                 }
             }
@@ -71,7 +101,9 @@ namespace SQLManip
             {
                 MessageBox.Show("Tablica danych jest pusta. Wybierz systematykę");
             }
+            log.WriteLine("\n\nOperacja wykonana poprawnie.\nZmodyfikowano " + i + " obiektów.");
             MessageBox.Show("Operacja wykonana poprawnie.\nZmodyfikowano " + i + " obiektów.", "Zakończono", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            log.Close();
             progressBar1.Value = 0;
         }
     }

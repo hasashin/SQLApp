@@ -42,12 +42,21 @@ namespace geodezja
         private static List<Tuple<int, string>> DocDescs;
         public static void setDescriptions()
         {
+            DocDescs = new List<Tuple<int, string>>();
             DocDescs.Add(new Tuple<int, string>(1, "aktualizacja"));
             DocDescs.Add(new Tuple<int, string>(2, "inwentaryzacja"));
             DocDescs.Add(new Tuple<int, string>(3, "rozgraniczenie"));
             DocDescs.Add(new Tuple<int, string>(4, "ustalenie granic"));
             DocDescs.Add(new Tuple<int, string>(5, "podział nieruchomości"));
             DocDescs.Add(new Tuple<int, string>(6, "modernizacja"));
+        }
+        public static string getDescription(int index)
+        {
+            foreach (Tuple<int, string> t in DocDescs)
+            {
+                if (t.Item1 == index) return t.Item2;
+            }
+            return null;
         }
     }
 }

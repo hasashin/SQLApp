@@ -36,9 +36,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.NameTBox = new System.Windows.Forms.TextBox();
             this.TypeTBox = new System.Windows.Forms.TextBox();
-            this.CorrectDescTBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.IGNOREButton = new System.Windows.Forms.Button();
+            this.CorrectDescCombo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // OKButton
@@ -112,13 +112,6 @@
             this.TypeTBox.TabIndex = 7;
             this.TypeTBox.TextChanged += new System.EventHandler(this.TypeTBox_TextChanged);
             // 
-            // CorrectDescTBox
-            // 
-            this.CorrectDescTBox.Location = new System.Drawing.Point(132, 104);
-            this.CorrectDescTBox.Name = "CorrectDescTBox";
-            this.CorrectDescTBox.Size = new System.Drawing.Size(238, 20);
-            this.CorrectDescTBox.TabIndex = 8;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -139,6 +132,14 @@
             this.IGNOREButton.UseVisualStyleBackColor = true;
             this.IGNOREButton.Click += new System.EventHandler(this.IGNOREButton_Click);
             // 
+            // CorrectDescCombo
+            // 
+            this.CorrectDescCombo.FormattingEnabled = true;
+            this.CorrectDescCombo.Location = new System.Drawing.Point(133, 104);
+            this.CorrectDescCombo.Name = "CorrectDescCombo";
+            this.CorrectDescCombo.Size = new System.Drawing.Size(237, 21);
+            this.CorrectDescCombo.TabIndex = 11;
+            // 
             // FormDialog
             // 
             this.AcceptButton = this.OKButton;
@@ -147,9 +148,9 @@
             this.CancelButton = this.CANCELButton;
             this.ClientSize = new System.Drawing.Size(382, 181);
             this.ControlBox = false;
+            this.Controls.Add(this.CorrectDescCombo);
             this.Controls.Add(this.IGNOREButton);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.CorrectDescTBox);
             this.Controls.Add(this.TypeTBox);
             this.Controls.Add(this.NameTBox);
             this.Controls.Add(this.label3);
@@ -166,6 +167,7 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Popraw nazwę";
+            this.Load += new System.EventHandler(this.FormDialog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,8 +183,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox NameTBox;
         private System.Windows.Forms.TextBox TypeTBox;
-        private System.Windows.Forms.TextBox CorrectDescTBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button IGNOREButton;
+        private System.Windows.Forms.ComboBox CorrectDescCombo;
     }
 }
