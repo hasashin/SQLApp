@@ -129,6 +129,7 @@ namespace SQLApp1
             }
             DBSelectCombo.SelectedIndex = 0;
             aliasTextBox.Text = geodezja.geodezja.DocumentsAlias;
+            geodezja.geodezja.
         }
 
         private void PowiatSelectCombo_SelectedIndexChanged(object sender, EventArgs e)

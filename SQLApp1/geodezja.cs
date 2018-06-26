@@ -39,5 +39,15 @@ namespace geodezja
     public static class geodezja
     {
         public static string DocumentsAlias = "P.3023";
+        private static List<Tuple<int, string>> DocDescs;
+        public static void setDescriptions()
+        {
+            DocDescs.Add(new Tuple<int, string>(1, "aktualizacja"));
+            DocDescs.Add(new Tuple<int, string>(2, "inwentaryzacja"));
+            DocDescs.Add(new Tuple<int, string>(3, "rozgraniczenie"));
+            DocDescs.Add(new Tuple<int, string>(4, "ustalenie granic"));
+            DocDescs.Add(new Tuple<int, string>(5, "podział nieruchomości"));
+            DocDescs.Add(new Tuple<int, string>(6, "modernizacja"));
+        }
     }
 }

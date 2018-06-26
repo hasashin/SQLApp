@@ -32,14 +32,14 @@
             this.ObrebSelectCombo = new System.Windows.Forms.ComboBox();
             this.ObrebSelectLabel = new System.Windows.Forms.Label();
             this.panelRoboczy = new System.Windows.Forms.Panel();
+            this.aliasLabel = new System.Windows.Forms.Label();
+            this.aliasTextBox = new System.Windows.Forms.TextBox();
             this.ObjectsGroupBox = new System.Windows.Forms.GroupBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.GoButton = new System.Windows.Forms.Button();
             this.ObjectCountTBox = new System.Windows.Forms.TextBox();
             this.ObjectCountLabel = new System.Windows.Forms.Label();
             this.SystematykaGroup = new System.Windows.Forms.GroupBox();
-            this.aliasLabel = new System.Windows.Forms.Label();
-            this.aliasTextBox = new System.Windows.Forms.TextBox();
             this.SystematicsSelectButton = new System.Windows.Forms.Button();
             this.JEwidencyjnaSelectCombo = new System.Windows.Forms.ComboBox();
             this.JEwidencyjnaLabel = new System.Windows.Forms.Label();
@@ -79,6 +79,17 @@
             this.panelRoboczy.Controls.Add(this.SystematykaGroup);
             resources.ApplyResources(this.panelRoboczy, "panelRoboczy");
             this.panelRoboczy.Name = "panelRoboczy";
+            // 
+            // aliasLabel
+            // 
+            resources.ApplyResources(this.aliasLabel, "aliasLabel");
+            this.aliasLabel.Name = "aliasLabel";
+            // 
+            // aliasTextBox
+            // 
+            resources.ApplyResources(this.aliasTextBox, "aliasTextBox");
+            this.aliasTextBox.Name = "aliasTextBox";
+            this.aliasTextBox.ReadOnly = true;
             // 
             // ObjectsGroupBox
             // 
@@ -125,17 +136,6 @@
             resources.ApplyResources(this.SystematykaGroup, "SystematykaGroup");
             this.SystematykaGroup.Name = "SystematykaGroup";
             this.SystematykaGroup.TabStop = false;
-            // 
-            // aliasLabel
-            // 
-            resources.ApplyResources(this.aliasLabel, "aliasLabel");
-            this.aliasLabel.Name = "aliasLabel";
-            // 
-            // aliasTextBox
-            // 
-            resources.ApplyResources(this.aliasTextBox, "aliasTextBox");
-            this.aliasTextBox.Name = "aliasTextBox";
-            this.aliasTextBox.ReadOnly = true;
             // 
             // SystematicsSelectButton
             // 

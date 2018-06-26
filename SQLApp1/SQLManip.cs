@@ -10,6 +10,11 @@ namespace SQLManip
 {
     class SQLManip
     {
+        private static void FillList(DataRow row)
+        {
+            List<Tuple<string, int, string>> tempList = new List<Tuple<string, int, string>>();
+            string rawValue = row["c_value"].ToString().Substring(1);
+        }
         public static void WstawPliki(DataTable dt, ProgressBar progressBar1, Form parent)
         {
             int i = 0;
@@ -66,7 +71,7 @@ namespace SQLManip
             {
                 MessageBox.Show("Tablica danych jest pusta. Wybierz systematykę");
             }
-            MessageBox.Show("Operacja wykonana poprawnie.\nZmodufikowano " + i + " obiektów.", "Zakończono", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Operacja wykonana poprawnie.\nZmodyfikowano " + i + " obiektów.", "Zakończono", MessageBoxButtons.OK, MessageBoxIcon.Information);
             progressBar1.Value = 0;
         }
     }
