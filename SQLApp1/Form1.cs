@@ -173,6 +173,7 @@ namespace SQLApp1
             try
             {
                 DataTable dt = DataManip.DataManip.FillDataTable(Obreb.id,cCodeID);
+                progressBar1.Maximum = dt.Rows.Count;
                 SQLManip.SQLManip.WstawPliki(dt,progressBar1,this);
             }
             catch (Exception ex)

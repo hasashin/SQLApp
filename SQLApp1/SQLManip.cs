@@ -21,7 +21,16 @@ namespace SQLManip
             {
                 if (plik == "") continue;
                 string[] dane = plik.Split(':');
-                tempList.Add(new Tuple<string, int, int>(dane[0], int.Parse(dane[1]), int.Parse(dane[2])));
+                if(dane.Length != 3)
+                {
+                    Tuple<string, int, int> newelem = execDialog(plik, row["c_ID"].ToString());
+                    if (newelem != null)
+                        tempList.Add(newelem);
+                    else
+                        continue;
+                }
+                else
+                    tempList.Add(new Tuple<string, int, int>(dane[0], int.Parse(dane[1]), int.Parse(dane[2])));
             }
             return tempList;
         }
@@ -32,6 +41,15 @@ namespace SQLManip
             DialogResult result = dlg.ShowDialog(parent);
             if (result == DialogResult.OK) return new Tuple<string, int, int>(dlg.GetGoodName(), dlg.GetGoodDesc(), dlg.GetGoodType());
             else if (result == DialogResult.Ignore) return wrong;
+            else return null;
+        }
+        private static Tuple<string, int, int> execDialog(string wrong, string c_object_ID)
+        {
+            FormDialog dlg = new FormDialog(wrong);
+            dlg.c_ID = c_object_ID;
+            DialogResult result = dlg.ShowDialog(null);
+            if (result == DialogResult.OK) return new Tuple<string, int, int>(dlg.GetGoodName(), dlg.GetGoodDesc(), dlg.GetGoodType());
+            else if (result == DialogResult.Cancel) throw new Exception("Przerwano przez użytkownika.");
             else return null;
         }
 
@@ -46,6 +64,7 @@ namespace SQLManip
         {
             StreamWriter log = File.CreateText("raport.log");
             int i = 0;
+            int rows = dt.Rows.Count;
             if (dt != null)
             {
 
@@ -55,7 +74,7 @@ namespace SQLManip
                 {
                     log.WriteLine("Obiekt " + dr["c_ID"].ToString() + ":");
                     docs = FillList(dr);
-                    progressBar1.Value = i / dt.Rows.Count;
+                    if(i<=rows) progressBar1.Value = i;
 
                     foreach (Tuple<string, int, int> doc in docs)
                     {
@@ -83,7 +102,8 @@ namespace SQLManip
                         }
                         catch (Exception e)
                         {
-                            MessageBox.Show(parent, e.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show(parent, e.Message + "\n"+ e.Source, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            progressBar1.Value = 0;
                         }
                     }
                     if (SqlConnect.ExecuteCommand("DELETE FROM RemarkTbl WHERE c_object_ID =" + dr["c_ID"].ToString()))
