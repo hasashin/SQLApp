@@ -178,7 +178,7 @@ namespace SQLApp1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Wystąpił błąd: "+ex.Message,"Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Wystąpił błąd: "+ex.Message + "\n" + ex.Source + "\n" + ex.TargetSite,"Błąd",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             PowiatSelectCombo.Enabled = true;
             JEwidencyjnaSelectCombo.Enabled = true;

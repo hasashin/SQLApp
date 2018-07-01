@@ -15,11 +15,14 @@ namespace SQLApp1
         {
             InitializeComponent();
         }
-        public FormDialog(string WName)
+        public FormDialog(string WName, bool czyString)
         {
             InitializeComponent();
             WrongDataLabel.Text = WName;
+            EditStringTBox.Text = WName;
             c_ID = "";
+            radioButton2.Enabled = czyString;
+
         }
         public string GetGoodName()
         {
@@ -97,6 +100,11 @@ namespace SQLApp1
             MessageBox.Show("Nie można znaleźć danyh aliasu programu Geo-Info.");
         }
 
+        public string getGoodString()
+        {
+            return EditStringTBox.Text;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             OdbcDataReader dr =  SqlConnect.ExecuteDataReader("*", "ObjectTbl, G_SZKICE","ObjectTbl.c_ID = G_SZKICE.c_object_ID AND ObjectTbl.c_ID = "+c_ID);
@@ -105,6 +113,30 @@ namespace SQLApp1
             ObjectDetail objectDetail = new ObjectDetail(table.Rows[0],new System.Drawing.Point(this.Location.X - 352, this.Location.Y));
             objectDetail.Show(this);
             dr.Close();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                radioButton2.Checked = false;
+                EditStringTBox.Enabled = false;
+                CorrectDescCombo.Enabled = true;
+                NameTBox.Enabled = true;
+                TypeTBox.Enabled = true;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                radioButton1.Checked = true;
+                EditStringTBox.Enabled = true;
+                CorrectDescCombo.Enabled = false;
+                NameTBox.Enabled = false;
+                TypeTBox.Enabled = false;
+            }
         }
     }
 }
