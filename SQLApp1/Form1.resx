@@ -167,83 +167,92 @@
   <data name="&gt;&gt;ObrebSelectLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;aliasLabel.Name" xml:space="preserve">
-    <value>aliasLabel</value>
+  <data name="ReverseOrderChkBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;aliasLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ReverseOrderChkBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 175</value>
   </data>
-  <data name="&gt;&gt;aliasLabel.Parent" xml:space="preserve">
+  <data name="ReverseOrderChkBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
+  </data>
+  <data name="ReverseOrderChkBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="ReverseOrderChkBox.Text" xml:space="preserve">
+    <value>Odwróć</value>
+  </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.Name" xml:space="preserve">
+    <value>ReverseOrderChkBox</value>
+  </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.Parent" xml:space="preserve">
     <value>panelRoboczy</value>
   </data>
-  <data name="&gt;&gt;aliasLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ReverseOrderChkBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;aliasTextBox.Name" xml:space="preserve">
-    <value>aliasTextBox</value>
+  <data name="OrderLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;aliasTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OrderLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 176</value>
   </data>
-  <data name="&gt;&gt;aliasTextBox.Parent" xml:space="preserve">
+  <data name="OrderLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="OrderLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="OrderLabel.Text" xml:space="preserve">
+    <value>Nazwa | Typ | Opis</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.Name" xml:space="preserve">
+    <value>OrderLabel</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.Parent" xml:space="preserve">
     <value>panelRoboczy</value>
   </data>
-  <data name="&gt;&gt;aliasTextBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;OrderLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;ObjectsGroupBox.Name" xml:space="preserve">
-    <value>ObjectsGroupBox</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;ObjectsGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 176</value>
   </data>
-  <data name="&gt;&gt;ObjectsGroupBox.Parent" xml:space="preserve">
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Kolejność danych pliku:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panelRoboczy</value>
   </data>
-  <data name="&gt;&gt;ObjectsGroupBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.Name" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.Parent" xml:space="preserve">
-    <value>panelRoboczy</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panelRoboczy.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="panelRoboczy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 95</value>
-  </data>
-  <data name="panelRoboczy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 334</value>
-  </data>
-  <data name="panelRoboczy.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.Name" xml:space="preserve">
-    <value>panelRoboczy</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="aliasLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="aliasLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 159</value>
+    <value>10, 143</value>
   </data>
   <data name="aliasLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -264,10 +273,10 @@
     <value>panelRoboczy</value>
   </data>
   <data name="&gt;&gt;aliasLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="aliasTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 156</value>
+    <value>48, 140</value>
   </data>
   <data name="aliasTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -285,7 +294,7 @@
     <value>panelRoboczy</value>
   </data>
   <data name="&gt;&gt;aliasTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
     <value>progressBar1</value>
@@ -336,10 +345,10 @@
     <value>3</value>
   </data>
   <data name="ObjectsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 197</value>
+    <value>5, 206</value>
   </data>
   <data name="ObjectsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 122</value>
+    <value>353, 113</value>
   </data>
   <data name="ObjectsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -357,7 +366,115 @@
     <value>panelRoboczy</value>
   </data>
   <data name="&gt;&gt;ObjectsGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Name" xml:space="preserve">
+    <value>SystematicsSelectButton</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;SystematicsSelectButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Name" xml:space="preserve">
+    <value>JEwidencyjnaSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaSelectCombo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Name" xml:space="preserve">
+    <value>JEwidencyjnaLabel</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;JEwidencyjnaLabel.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Name" xml:space="preserve">
+    <value>PowiatSelectCombo</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;PowiatSelectCombo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Name" xml:space="preserve">
+    <value>PowiatLabel</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.Parent" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;PowiatLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SystematykaGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 3</value>
+  </data>
+  <data name="SystematykaGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 131</value>
+  </data>
+  <data name="SystematykaGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="SystematykaGroup.Text" xml:space="preserve">
+    <value>Systematyka</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Name" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelRoboczy.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelRoboczy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 95</value>
+  </data>
+  <data name="panelRoboczy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 334</value>
+  </data>
+  <data name="panelRoboczy.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Name" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 85</value>
@@ -456,90 +573,6 @@
     <value>ObjectsGroupBox</value>
   </data>
   <data name="&gt;&gt;ObjectCountLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;SystematicsSelectButton.Name" xml:space="preserve">
-    <value>SystematicsSelectButton</value>
-  </data>
-  <data name="&gt;&gt;SystematicsSelectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SystematicsSelectButton.Parent" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;SystematicsSelectButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Name" xml:space="preserve">
-    <value>JEwidencyjnaSelectCombo</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaSelectCombo.Parent" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaSelectCombo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaLabel.Name" xml:space="preserve">
-    <value>JEwidencyjnaLabel</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaLabel.Parent" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;JEwidencyjnaLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PowiatSelectCombo.Name" xml:space="preserve">
-    <value>PowiatSelectCombo</value>
-  </data>
-  <data name="&gt;&gt;PowiatSelectCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PowiatSelectCombo.Parent" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;PowiatSelectCombo.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;PowiatLabel.Name" xml:space="preserve">
-    <value>PowiatLabel</value>
-  </data>
-  <data name="&gt;&gt;PowiatLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PowiatLabel.Parent" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;PowiatLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="SystematykaGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 3</value>
-  </data>
-  <data name="SystematykaGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 131</value>
-  </data>
-  <data name="SystematykaGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="SystematykaGroup.Text" xml:space="preserve">
-    <value>Systematyka</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.Name" xml:space="preserve">
-    <value>SystematykaGroup</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.Parent" xml:space="preserve">
-    <value>panelRoboczy</value>
-  </data>
-  <data name="&gt;&gt;SystematykaGroup.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="SystematicsSelectButton.Location" type="System.Drawing.Point, System.Drawing">

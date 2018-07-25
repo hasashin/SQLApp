@@ -100,7 +100,7 @@ namespace DataManip
             string opis = Obreb.opis;
             opis = opis.ToLower();
             opis = opis[0].ToString().ToUpper() + opis.Substring(1);
-            return "Gm. " + Obreb.parentnazwa+"\\"+opis+"\\";
+            return "Gmina " + Obreb.parentnazwa+"\\"+opis+"\\";
         }
         public static void WyszukajArkusze()
         {

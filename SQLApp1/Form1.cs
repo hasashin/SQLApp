@@ -174,7 +174,7 @@ namespace SQLApp1
             {
                 DataTable dt = DataManip.DataManip.FillDataTable(Obreb.id,cCodeID);
                 progressBar1.Maximum = dt.Rows.Count;
-                SQLManip.SQLManip.WstawPliki(dt,progressBar1,this);
+                SQLManip.SQLManip.WstawPliki(dt,progressBar1,this,ReverseOrderChkBox.Checked);
             }
             catch (Exception ex)
             {
@@ -183,6 +183,7 @@ namespace SQLApp1
             PowiatSelectCombo.Enabled = true;
             JEwidencyjnaSelectCombo.Enabled = true;
             ObrebSelectCombo.Enabled = true;
+            progressBar1.Value = progressBar1.Minimum;
         }
 
         private void ObrebSelectCombo_SelectedIndexChanged(object sender, EventArgs e)
@@ -195,6 +196,18 @@ namespace SQLApp1
             Obreb.Fill(int.Parse(rd["c_ID"].ToString()), int.Parse(rd["c_parent_ID"].ToString()), rd["c_name"].ToString(), rd["c_description"].ToString());
             rd.Close();
             DataManip.DataManip.WyszukajArkusze();
+        }
+
+        private void ReverseOrderChkBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ReverseOrderChkBox.Checked)
+            {
+                OrderLabel.Text = "Nazwa | Opis | Typ";
+            }
+            else
+            {
+                OrderLabel.Text = "Nazwa | Typ | Opis";
+            }
         }
     }
 }

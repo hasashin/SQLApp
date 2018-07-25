@@ -100,26 +100,28 @@ namespace SQLManip
             return null;
         }
 
-        private static bool insertRow(string c_ID, Tuple<string,int,int> doc)
+        private static bool insertRow(string c_ID, Tuple<string,int,int> doc, bool reverse)
         {
             string docPath = DataManip.DataManip.GenerateDocumentPath();
             string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item2) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+            if(reverse) command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item3) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item2] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
             return SqlConnect.ExecuteCommand(command);
         }
 
-        private static bool insertRow(string c_ID, List<Tuple<string, int, int>> docs)
+        private static bool insertRow(string c_ID, List<Tuple<string, int, int>> docs,bool reverse)
         {
             bool ret = true;
             foreach (Tuple<string, int, int> doc in docs)
             {
                 string docPath = DataManip.DataManip.GenerateDocumentPath();
                 string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item2) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+                if(reverse) command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item3) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item2] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
                 ret = ret && SqlConnect.ExecuteCommand(command);
             }
             return ret;
         }
 
-        public static void WstawPliki(DataTable dt, ProgressBar progressBar1, Form parent)
+        public static void WstawPliki(DataTable dt, ProgressBar progressBar1, Form parent, bool reverse)
         {
             int i = 0;
             int rows = dt.Rows.Count;
@@ -137,9 +139,9 @@ namespace SQLManip
                     {
                         try
                         {
-                            if (!insertRow(dr["c_ID"].ToString(), doc))
+                            if (!insertRow(dr["c_ID"].ToString(), doc,reverse))
                             {
-                                if (!insertRow(dr["c_ID"].ToString(), execDialog(doc, parent)))
+                                if (!insertRow(dr["c_ID"].ToString(), execDialog(doc, parent),reverse))
                                 {
                                     MessageBox.Show("Nie udało się zapisać pliku '" + doc.Item1 + "' do bazy", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }

@@ -54,6 +54,9 @@
             this.SQLPasswdTBox = new System.Windows.Forms.TextBox();
             this.SQLPasswdLabel = new System.Windows.Forms.Label();
             this.StateLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.OrderLabel = new System.Windows.Forms.Label();
+            this.ReverseOrderChkBox = new System.Windows.Forms.CheckBox();
             this.panelRoboczy.SuspendLayout();
             this.ObjectsGroupBox.SuspendLayout();
             this.SystematykaGroup.SuspendLayout();
@@ -73,6 +76,9 @@
             // 
             // panelRoboczy
             // 
+            this.panelRoboczy.Controls.Add(this.ReverseOrderChkBox);
+            this.panelRoboczy.Controls.Add(this.OrderLabel);
+            this.panelRoboczy.Controls.Add(this.label1);
             this.panelRoboczy.Controls.Add(this.aliasLabel);
             this.panelRoboczy.Controls.Add(this.aliasTextBox);
             this.panelRoboczy.Controls.Add(this.ObjectsGroupBox);
@@ -221,6 +227,23 @@
             resources.ApplyResources(this.StateLabel, "StateLabel");
             this.StateLabel.Name = "StateLabel";
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // OrderLabel
+            // 
+            resources.ApplyResources(this.OrderLabel, "OrderLabel");
+            this.OrderLabel.Name = "OrderLabel";
+            // 
+            // ReverseOrderChkBox
+            // 
+            resources.ApplyResources(this.ReverseOrderChkBox, "ReverseOrderChkBox");
+            this.ReverseOrderChkBox.Name = "ReverseOrderChkBox";
+            this.ReverseOrderChkBox.UseVisualStyleBackColor = true;
+            this.ReverseOrderChkBox.CheckedChanged += new System.EventHandler(this.ReverseOrderChkBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.ConnectButton;
@@ -279,6 +302,9 @@
         public System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label aliasLabel;
         private System.Windows.Forms.TextBox aliasTextBox;
+        private System.Windows.Forms.Label OrderLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox ReverseOrderChkBox;
     }
 }
 
