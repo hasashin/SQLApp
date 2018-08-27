@@ -31,9 +31,9 @@ namespace SQLManip
                     {
                         tempList.Add(new Tuple<string, int, int>(dane[0], int.Parse(dane[2]), int.Parse(dane[1])));
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
-                        tempList.AddRange(execDialog("Niepoprawny ciąg tekstowy:\n"+plik,row["c_id"].ToString()));
+                        tempList.AddRange(execDialog(plik,row["c_id"].ToString()));
                     }
             }
             return tempList;

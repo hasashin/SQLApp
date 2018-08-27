@@ -48,37 +48,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataManip.cs" />
-    <Compile Include="geodezja.cs" />
-    <Compile Include="ObjectDetail.cs">
+    <Compile Include="zamianaKomentarzy\DataManip.cs" />
+    <Compile Include="zamianaKomentarzy\geodezja.cs" />
+    <Compile Include="zamianaKomentarzy\ObjectDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ObjectDetail.Designer.cs">
+    <Compile Include="zamianaKomentarzy\ObjectDetail.Designer.cs">
       <DependentUpon>ObjectDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="SQLConnect.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="zamianaKomentarzy\SQLConnect.cs" />
+    <Compile Include="zamianaKomentarzy\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="zamianaKomentarzy\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDialog.cs">
+    <Compile Include="zamianaKomentarzy\FormDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDialog.Designer.cs">
+    <Compile Include="zamianaKomentarzy\FormDialog.Designer.cs">
       <DependentUpon>FormDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="zamianaKomentarzy\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQLManip.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="zamianaKomentarzy\SQLManip.cs" />
+    <EmbeddedResource Include="zamianaKomentarzy\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDialog.resx">
+    <EmbeddedResource Include="zamianaKomentarzy\FormDialog.resx">
       <DependentUpon>FormDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ObjectDetail.resx">
+    <EmbeddedResource Include="zamianaKomentarzy\ObjectDetail.resx">
       <DependentUpon>ObjectDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
