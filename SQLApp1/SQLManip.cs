@@ -21,13 +21,20 @@ namespace SQLManip
             {
                 if (plik == "") continue;
                 string[] dane = plik.Split(':');
-                if(dane.Length != 3)
+                if (dane.Length != 3)
                 {
                     List<Tuple<string, int, int>> newelems = execDialog(plik, row["c_ID"].ToString());
                     tempList.AddRange(newelems);
                 }
                 else
-                    tempList.Add(new Tuple<string, int, int>(dane[0], int.Parse(dane[2]), int.Parse(dane[1])));
+                    try
+                    {
+                        tempList.Add(new Tuple<string, int, int>(dane[0], int.Parse(dane[2]), int.Parse(dane[1])));
+                    }
+                    catch (Exception ex)
+                    {
+                        tempList.AddRange(execDialog("Niepoprawny ciąg tekstowy:\n"+plik,row["c_id"].ToString()));
+                    }
             }
             return tempList;
         }
