@@ -88,16 +88,16 @@ namespace SQLManip
                 else if (result == DialogResult.Cancel) throw new Exception("Przerwano przez użytkownika.");
                 else return null;
             }
-            else if(dlg.radioButton2.Checked)
+            else if (dlg.radioButton2.Checked)
             {
                 if (result == DialogResult.OK)
                 {
                     string s = dlg.getGoodString();
                     string[] sarr = s.Split(';');
-                    foreach(string elem in sarr)
+                    foreach (string elem in sarr)
                     {
                         string[] elemArr = elem.Split(':');
-                        list.Add(new Tuple<string, int, int>(elemArr[0],int.Parse(elemArr[2]),int.Parse(elemArr[1])));
+                        list.Add(new Tuple<string, int, int>(elemArr[0], int.Parse(elemArr[2]), int.Parse(elemArr[1])));
                     }
                     return list;
                 }

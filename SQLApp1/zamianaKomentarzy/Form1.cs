@@ -115,6 +115,7 @@ namespace SQLApp1
             DBSelectCombo.SelectedIndex = 0;
             aliasTextBox.Text = geodezja.geodezja.DocumentsAlias;
             geodezja.geodezja.setDescriptions();
+            geodezja.geodezja.setTypes();
         }
 
         private void PowiatSelectCombo_SelectedIndexChanged(object sender, EventArgs e)
@@ -160,7 +161,7 @@ namespace SQLApp1
                 ObjectCountTBox.Text = rd["c_liczba"].ToString();
                 progressBar1.Maximum = int.Parse(rd["c_liczba"].ToString());
                 rd.Close();
-                GoButton.Enabled = true;
+                GoButton.Enabled = progressBar1.Maximum != 0;
             }
             else MessageBox.Show("rd.HasRows == 0 ");
         }

@@ -34,7 +34,7 @@ namespace SQLApp1
         }
         public int GetGoodType()
         {
-            return int.Parse(TypeTBox.Text);
+            return int.Parse(CorrectTypeComboBox.Text.Substring(0,1));
         }
 
         private void OKButton_Click(object sender, EventArgs e)
@@ -63,21 +63,28 @@ namespace SQLApp1
 
         private void FormDialog_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 6; i++)
+            foreach(Tuple<int,string> elem in geodezja.geodezja.DocDescs)
             {
-                CorrectDescCombo.Items.Add(i + " " + geodezja.geodezja.getDescription(i));
+                CorrectDescCombo.Items.Add(elem.Item1 + " " + elem.Item2);
+            }
+            foreach(Tuple<int,string> elem in geodezja.geodezja.DocTypes)
+            {
+                CorrectTypeComboBox.Items.Add(elem.Item1 + " " + elem.Item2);
             }
         }
 
         private void showFileButton_Click(object sender, EventArgs e)
         {
+            bool found = false;
             DriveInfo[] dyski = DriveInfo.GetDrives();
             string line;
             foreach (DriveInfo dysk in dyski)
             {
-                MessageBox.Show(dysk.Name + "Systherm Info\\GEO-INFO Mapa\\System\\Gei-Info.ini");
-                if (File.Exists(dysk.Name + "Systherm Info\\GEO-INFO Mapa\\System\\Gei-Info.ini"))
+                MessageBox.Show(dysk.Name + "Systherm Info\\GEO-INFO Mapa\\System\\Geo-Info.ini");
+                if (File.Exists(dysk.Name + "Systherm Info\\GEO-INFO Mapa\\System\\Geo-Info.ini"))
                 {
+                    found = true;
+                    MessageBox.Show("Exists");
                     StreamReader sr = File.OpenText(dysk.Name + "Systherm Info\\GEO-INFO Mapa\\System\\Gei-Info.ini");
                     line = sr.ReadLine();
                     if (line.Contains("P.3023="))
@@ -86,7 +93,7 @@ namespace SQLApp1
                         MessageBox.Show(line);
                         try
                         {
-                            Process.Start(line + DataManip.DataManip.GenerateDocumentPath() + WrongDataLabel.Text.Substring(1, WrongDataLabel.Text.IndexOf(":") - 1));
+                            Process.Start(line + DataManip.DataManip.GenerateDocumentPath() + WrongDataLabel.Text.Substring(1, WrongDataLabel.Text.IndexOf(":")));
                         }
                         catch (Exception ex)
                         {
@@ -97,7 +104,8 @@ namespace SQLApp1
                     return;
                 }
             }
-            MessageBox.Show("Nie można znaleźć danyh aliasu programu Geo-Info.");
+            if(!found) MessageBox.Show("Nie można znaleźć danyh aliasu programu Geo-Info.");
+
         }
 
         public string getGoodString()
@@ -123,7 +131,7 @@ namespace SQLApp1
                 EditStringTBox.Enabled = false;
                 CorrectDescCombo.Enabled = true;
                 NameTBox.Enabled = true;
-                TypeTBox.Enabled = true;
+                CorrectTypeComboBox.Enabled = true;
             }
         }
 
@@ -135,7 +143,7 @@ namespace SQLApp1
                 EditStringTBox.Enabled = true;
                 CorrectDescCombo.Enabled = false;
                 NameTBox.Enabled = false;
-                TypeTBox.Enabled = false;
+                CorrectTypeComboBox.Enabled = false;
             }
         }
     }

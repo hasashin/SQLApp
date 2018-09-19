@@ -39,7 +39,7 @@ namespace geodezja
     public static class geodezja
     {
         public static string DocumentsAlias = "P.3023";
-        private static List<Tuple<int, string>> DocDescs;
+        public static List<Tuple<int, string>> DocDescs, DocTypes;
         public static void setDescriptions()
         {
             DocDescs = new List<Tuple<int, string>>();
@@ -49,6 +49,18 @@ namespace geodezja
             DocDescs.Add(new Tuple<int, string>(4, "ustalenie granic"));
             DocDescs.Add(new Tuple<int, string>(5, "podział nieruchomości"));
             DocDescs.Add(new Tuple<int, string>(6, "modernizacja"));
+        }
+        public static void setTypes()
+        {
+            DocTypes = new List<Tuple<int, string>>();
+            DocTypes.Add(new Tuple<int, string>(1, "szkic polowy/zbiór szkiców polowych"));
+            DocTypes.Add(new Tuple<int, string>(2, "wykaz współrzędnych/zbiór wykazów współrzędnych"));
+            DocTypes.Add(new Tuple<int, string>(3, "protokół/zbiór protokołów"));
+            DocTypes.Add(new Tuple<int, string>(4, "opis topograficzny/zbiór opisów topograficznych"));
+            DocTypes.Add(new Tuple<int, string>(5, "sprawozdanie techniczne"));
+            DocTypes.Add(new Tuple<int, string>(6, "mapa"));
+            DocTypes.Add(new Tuple<int, string>(7, "dziennik pomiarowy (obliczenia)"));
+            DocTypes.Add(new Tuple<int, string>(22, "inny (decyzje, postanowienia itp.)"));
         }
         public static string getDescription(int index)
         {
