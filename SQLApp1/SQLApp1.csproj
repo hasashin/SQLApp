@@ -35,6 +35,9 @@
     <ApplicationIcon>database.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Liczenie dokumentów\LiczDok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liczenie dokumentów\LiczDok.Designer.cs">
+      <DependentUpon>LiczDok.cs</DependentUpon>
+    </Compile>
     <Compile Include="zamianaKomentarzy\DataManip.cs" />
     <Compile Include="zamianaKomentarzy\geodezja.cs" />
     <Compile Include="zamianaKomentarzy\ObjectDetail.cs">
@@ -72,6 +81,9 @@
     <Compile Include="zamianaKomentarzy\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="zamianaKomentarzy\SQLManip.cs" />
+    <EmbeddedResource Include="Liczenie dokumentów\LiczDok.resx">
+      <DependentUpon>LiczDok.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="zamianaKomentarzy\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +102,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

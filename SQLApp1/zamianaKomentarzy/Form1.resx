@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ObrebSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 67</value>
+    <value>164, 103</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ObrebSelectCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ObrebSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 21</value>
+    <value>264, 28</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ObrebSelectCombo.TabIndex" type="System.Int32, mscorlib">
@@ -144,10 +148,13 @@
     <value>True</value>
   </data>
   <data name="ObrebSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 70</value>
+    <value>100, 108</value>
+  </data>
+  <data name="ObrebSelectLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="ObrebSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+    <value>53, 20</value>
   </data>
   <data name="ObrebSelectLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -167,14 +174,128 @@
   <data name="&gt;&gt;ObrebSelectLabel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.Name" xml:space="preserve">
+    <value>ReverseOrderChkBox</value>
+  </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;ReverseOrderChkBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.Name" xml:space="preserve">
+    <value>OrderLabel</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;OrderLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.Name" xml:space="preserve">
+    <value>aliasLabel</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;aliasLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.Name" xml:space="preserve">
+    <value>aliasTextBox</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;aliasTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.Name" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;ObjectsGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Name" xml:space="preserve">
+    <value>SystematykaGroup</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.Parent" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;SystematykaGroup.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelRoboczy.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="panelRoboczy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 146</value>
+  </data>
+  <data name="panelRoboczy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="panelRoboczy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>543, 514</value>
+  </data>
+  <data name="panelRoboczy.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Name" xml:space="preserve">
+    <value>panelRoboczy</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelRoboczy.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="ReverseOrderChkBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="ReverseOrderChkBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 175</value>
+    <value>408, 269</value>
+  </data>
+  <data name="ReverseOrderChkBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ReverseOrderChkBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 17</value>
+    <value>89, 24</value>
   </data>
   <data name="ReverseOrderChkBox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -198,10 +319,13 @@
     <value>True</value>
   </data>
   <data name="OrderLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 176</value>
+    <value>226, 271</value>
+  </data>
+  <data name="OrderLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="OrderLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 13</value>
+    <value>140, 20</value>
   </data>
   <data name="OrderLabel.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -225,10 +349,13 @@
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 176</value>
+    <value>15, 271</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 13</value>
+    <value>172, 20</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -252,10 +379,13 @@
     <value>True</value>
   </data>
   <data name="aliasLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 143</value>
+    <value>15, 220</value>
+  </data>
+  <data name="aliasLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="aliasLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
+    <value>47, 20</value>
   </data>
   <data name="aliasLabel.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -276,10 +406,13 @@
     <value>3</value>
   </data>
   <data name="aliasTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 140</value>
+    <value>72, 215</value>
+  </data>
+  <data name="aliasTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="aliasTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>148, 26</value>
   </data>
   <data name="aliasTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -345,10 +478,16 @@
     <value>3</value>
   </data>
   <data name="ObjectsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 206</value>
+    <value>8, 317</value>
+  </data>
+  <data name="ObjectsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ObjectsGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ObjectsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 113</value>
+    <value>530, 174</value>
   </data>
   <data name="ObjectsGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -367,6 +506,117 @@
   </data>
   <data name="&gt;&gt;ObjectsGroupBox.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 131</value>
+  </data>
+  <data name="progressBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 35</value>
+  </data>
+  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
+    <value>progressBar1</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GoButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GoButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 86</value>
+  </data>
+  <data name="GoButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="GoButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 35</value>
+  </data>
+  <data name="GoButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GoButton.Text" xml:space="preserve">
+    <value>Zamień</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Name" xml:space="preserve">
+    <value>GoButton</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GoButton.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;GoButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ObjectCountTBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 40</value>
+  </data>
+  <data name="ObjectCountTBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="ObjectCountTBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 26</value>
+  </data>
+  <data name="ObjectCountTBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ObjectCountTBox.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Name" xml:space="preserve">
+    <value>ObjectCountTBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountTBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ObjectCountLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ObjectCountLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 45</value>
+  </data>
+  <data name="ObjectCountLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="ObjectCountLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 20</value>
+  </data>
+  <data name="ObjectCountLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ObjectCountLabel.Text" xml:space="preserve">
+    <value>Ilość obiektów do zmiany</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Name" xml:space="preserve">
+    <value>ObjectCountLabel</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.Parent" xml:space="preserve">
+    <value>ObjectsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ObjectCountLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;SystematicsSelectButton.Name" xml:space="preserve">
     <value>SystematicsSelectButton</value>
@@ -429,10 +679,16 @@
     <value>5</value>
   </data>
   <data name="SystematykaGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 3</value>
+    <value>8, 5</value>
+  </data>
+  <data name="SystematykaGroup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="SystematykaGroup.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="SystematykaGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 131</value>
+    <value>530, 202</value>
   </data>
   <data name="SystematykaGroup.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -452,134 +708,14 @@
   <data name="&gt;&gt;SystematykaGroup.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="panelRoboczy.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="panelRoboczy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 95</value>
-  </data>
-  <data name="panelRoboczy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 334</value>
-  </data>
-  <data name="panelRoboczy.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.Name" xml:space="preserve">
-    <value>panelRoboczy</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelRoboczy.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 85</value>
-  </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 23</value>
-  </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
-    <value>ObjectsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="GoButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="GoButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 56</value>
-  </data>
-  <data name="GoButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="GoButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="GoButton.Text" xml:space="preserve">
-    <value>Zamień</value>
-  </data>
-  <data name="&gt;&gt;GoButton.Name" xml:space="preserve">
-    <value>GoButton</value>
-  </data>
-  <data name="&gt;&gt;GoButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoButton.Parent" xml:space="preserve">
-    <value>ObjectsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;GoButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ObjectCountTBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 26</value>
-  </data>
-  <data name="ObjectCountTBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 20</value>
-  </data>
-  <data name="ObjectCountTBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="ObjectCountTBox.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountTBox.Name" xml:space="preserve">
-    <value>ObjectCountTBox</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountTBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountTBox.Parent" xml:space="preserve">
-    <value>ObjectsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountTBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ObjectCountLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ObjectCountLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 29</value>
-  </data>
-  <data name="ObjectCountLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 13</value>
-  </data>
-  <data name="ObjectCountLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ObjectCountLabel.Text" xml:space="preserve">
-    <value>Ilość obiektów do zmiany</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountLabel.Name" xml:space="preserve">
-    <value>ObjectCountLabel</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountLabel.Parent" xml:space="preserve">
-    <value>ObjectsGroupBox</value>
-  </data>
-  <data name="&gt;&gt;ObjectCountLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="SystematicsSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 94</value>
+    <value>316, 145</value>
+  </data>
+  <data name="SystematicsSelectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="SystematicsSelectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>112, 35</value>
   </data>
   <data name="SystematicsSelectButton.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -600,10 +736,13 @@
     <value>0</value>
   </data>
   <data name="JEwidencyjnaSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 40</value>
+    <value>164, 62</value>
+  </data>
+  <data name="JEwidencyjnaSelectCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="JEwidencyjnaSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 21</value>
+    <value>264, 28</value>
   </data>
   <data name="JEwidencyjnaSelectCombo.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -623,15 +762,17 @@
   <data name="JEwidencyjnaLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="JEwidencyjnaLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="JEwidencyjnaLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 43</value>
+    <value>27, 66</value>
+  </data>
+  <data name="JEwidencyjnaLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="JEwidencyjnaLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+    <value>125, 20</value>
   </data>
   <data name="JEwidencyjnaLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -652,10 +793,13 @@
     <value>2</value>
   </data>
   <data name="PowiatSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 13</value>
+    <value>164, 20</value>
+  </data>
+  <data name="PowiatSelectCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="PowiatSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 21</value>
+    <value>264, 28</value>
   </data>
   <data name="PowiatSelectCombo.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -679,10 +823,13 @@
     <value>NoControl</value>
   </data>
   <data name="PowiatLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 16</value>
+    <value>96, 25</value>
+  </data>
+  <data name="PowiatLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="PowiatLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
+    <value>56, 20</value>
   </data>
   <data name="PowiatLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -703,10 +850,13 @@
     <value>5</value>
   </data>
   <data name="SQLSrvNameTBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 10</value>
+    <value>189, 15</value>
+  </data>
+  <data name="SQLSrvNameTBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="SQLSrvNameTBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 20</value>
+    <value>370, 26</value>
   </data>
   <data name="SQLSrvNameTBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -721,7 +871,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SQLSrvNameTBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="SQLSrvNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -730,10 +880,13 @@
     <value>NoControl</value>
   </data>
   <data name="SQLSrvNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 13</value>
+    <value>24, 20</value>
+  </data>
+  <data name="SQLSrvNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="SQLSrvNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>153, 20</value>
   </data>
   <data name="SQLSrvNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -751,13 +904,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SQLSrvNameLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="ConnectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>309, 65</value>
+    <value>464, 100</value>
+  </data>
+  <data name="ConnectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="ConnectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 23</value>
+    <value>98, 35</value>
   </data>
   <data name="ConnectButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -775,7 +931,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ConnectButton.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="DBSelectLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -784,10 +940,13 @@
     <value>NoControl</value>
   </data>
   <data name="DBSelectLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 68</value>
+    <value>24, 105</value>
+  </data>
+  <data name="DBSelectLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="DBSelectLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 13</value>
+    <value>149, 20</value>
   </data>
   <data name="DBSelectLabel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -805,13 +964,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DBSelectLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>299, 435</value>
+    <value>448, 669</value>
+  </data>
+  <data name="CloseButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 22</value>
+    <value>112, 34</value>
   </data>
   <data name="CloseButton.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -829,16 +991,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CloseButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="DBSelectCombo.Items" xml:space="preserve">
     <value>GI_Slupca</value>
   </data>
   <data name="DBSelectCombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 65</value>
+    <value>189, 100</value>
+  </data>
+  <data name="DBSelectCombo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="DBSelectCombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 21</value>
+    <value>264, 28</value>
   </data>
   <data name="DBSelectCombo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -853,13 +1018,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DBSelectCombo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="SQLPasswdTBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 36</value>
+    <value>189, 55</value>
+  </data>
+  <data name="SQLPasswdTBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="SQLPasswdTBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 20</value>
+    <value>370, 26</value>
   </data>
   <data name="SQLPasswdTBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -874,7 +1042,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SQLPasswdTBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="SQLPasswdLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -883,10 +1051,13 @@
     <value>NoControl</value>
   </data>
   <data name="SQLPasswdLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 41</value>
+    <value>124, 63</value>
+  </data>
+  <data name="SQLPasswdLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="SQLPasswdLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 13</value>
+    <value>51, 20</value>
   </data>
   <data name="SQLPasswdLabel.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -904,16 +1075,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SQLPasswdLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="StateLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="StateLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 440</value>
+    <value>21, 677</value>
+  </data>
+  <data name="StateLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="StateLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
+    <value>0, 20</value>
   </data>
   <data name="StateLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -928,16 +1102,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;StateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 670</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 34</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Licz Strony</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>384, 469</value>
+    <value>576, 722</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2733,6 +2931,9 @@
         8dmqf/7Zqn/+2at/8dmqf9fZqn+u2Kp+cdaofR0AAAAAAAAAAMADAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMADAAA=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

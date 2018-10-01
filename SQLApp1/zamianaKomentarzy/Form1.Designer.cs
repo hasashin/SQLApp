@@ -32,6 +32,9 @@
             this.ObrebSelectCombo = new System.Windows.Forms.ComboBox();
             this.ObrebSelectLabel = new System.Windows.Forms.Label();
             this.panelRoboczy = new System.Windows.Forms.Panel();
+            this.ReverseOrderChkBox = new System.Windows.Forms.CheckBox();
+            this.OrderLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.aliasLabel = new System.Windows.Forms.Label();
             this.aliasTextBox = new System.Windows.Forms.TextBox();
             this.ObjectsGroupBox = new System.Windows.Forms.GroupBox();
@@ -54,9 +57,7 @@
             this.SQLPasswdTBox = new System.Windows.Forms.TextBox();
             this.SQLPasswdLabel = new System.Windows.Forms.Label();
             this.StateLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.OrderLabel = new System.Windows.Forms.Label();
-            this.ReverseOrderChkBox = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelRoboczy.SuspendLayout();
             this.ObjectsGroupBox.SuspendLayout();
             this.SystematykaGroup.SuspendLayout();
@@ -85,6 +86,23 @@
             this.panelRoboczy.Controls.Add(this.SystematykaGroup);
             resources.ApplyResources(this.panelRoboczy, "panelRoboczy");
             this.panelRoboczy.Name = "panelRoboczy";
+            // 
+            // ReverseOrderChkBox
+            // 
+            resources.ApplyResources(this.ReverseOrderChkBox, "ReverseOrderChkBox");
+            this.ReverseOrderChkBox.Name = "ReverseOrderChkBox";
+            this.ReverseOrderChkBox.UseVisualStyleBackColor = true;
+            this.ReverseOrderChkBox.CheckedChanged += new System.EventHandler(this.ReverseOrderChkBox_CheckedChanged);
+            // 
+            // OrderLabel
+            // 
+            resources.ApplyResources(this.OrderLabel, "OrderLabel");
+            this.OrderLabel.Name = "OrderLabel";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // aliasLabel
             // 
@@ -227,22 +245,12 @@
             resources.ApplyResources(this.StateLabel, "StateLabel");
             this.StateLabel.Name = "StateLabel";
             // 
-            // label1
+            // button1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // OrderLabel
-            // 
-            resources.ApplyResources(this.OrderLabel, "OrderLabel");
-            this.OrderLabel.Name = "OrderLabel";
-            // 
-            // ReverseOrderChkBox
-            // 
-            resources.ApplyResources(this.ReverseOrderChkBox, "ReverseOrderChkBox");
-            this.ReverseOrderChkBox.Name = "ReverseOrderChkBox";
-            this.ReverseOrderChkBox.UseVisualStyleBackColor = true;
-            this.ReverseOrderChkBox.CheckedChanged += new System.EventHandler(this.ReverseOrderChkBox_CheckedChanged);
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // Form1
             // 
@@ -250,6 +258,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.StateLabel);
             this.Controls.Add(this.SQLPasswdLabel);
             this.Controls.Add(this.SQLPasswdTBox);
@@ -305,6 +314,7 @@
         private System.Windows.Forms.Label OrderLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox ReverseOrderChkBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 

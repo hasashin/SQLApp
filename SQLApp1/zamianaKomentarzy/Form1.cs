@@ -14,7 +14,6 @@ namespace SQLApp1
     public partial class Form1 : Form
     {
         public int cCodeID=0;
-        
         public Form1()
         {
             InitializeComponent();
@@ -209,6 +208,12 @@ namespace SQLApp1
             {
                 OrderLabel.Text = "Nazwa | Typ | Opis";
             }
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Liczenie_dokumentów.LiczStrony modal = new Liczenie_dokumentów.LiczStrony();
+            modal.ShowDialog();
         }
     }
 }
