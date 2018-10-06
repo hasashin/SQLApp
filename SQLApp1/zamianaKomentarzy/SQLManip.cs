@@ -110,8 +110,8 @@ namespace SQLManip
         private static bool insertRow(string c_ID, Tuple<string,int,int> doc, bool reverse)
         {
             string docPath = DataManip.DataManip.GenerateDocumentPath();
-            string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item2) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
-            if(reverse) command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item3) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item2] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+            string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "', NULL ,'" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+            if(reverse) command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "', NULL ,'" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item2] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
             return SqlConnect.ExecuteCommand(command);
         }
 
@@ -121,8 +121,8 @@ namespace SQLManip
             foreach (Tuple<string, int, int> doc in docs)
             {
                 string docPath = DataManip.DataManip.GenerateDocumentPath();
-                string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item2) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
-                if(reverse) command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "','" + geodezja.geodezja.getDescription(doc.Item3) + "','" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item2] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+                string command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "', NULL ,'" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item3] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
+                if(reverse) command = "INSERT INTO DocumentTbl VALUES (" + c_ID + ",'" + doc.Item1 + "', NULL ,'" + docPath + doc.Item1 + ".pdf'," + DataManip.DataManip.SłownikIDTypow[doc.Item2] + ",'" + geodezja.geodezja.DocumentsAlias + "',1)";
                 ret = ret && SqlConnect.ExecuteCommand(command);
             }
             return ret;
