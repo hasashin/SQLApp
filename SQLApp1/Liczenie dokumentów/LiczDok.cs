@@ -1,29 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 using System.IO;
-using System.Text.RegularExpressions;
 using iTextSharp.text.pdf;
-using iTextSharp.text.xml;
+using iTextSharp.text;
 
 namespace SQLApp1.Liczenie_dokumentów
 {
     public partial class LiczStrony : Form
     {
-        delegate void StringArgReturningVoidDelegate(ref int dok,ref int str);
+        private int A4W=210;
+        private int A4H=297;
+        private bool virtClick = false;
+
+        delegate void StringArgReturningVoidDelegate(ref int dok,ref int str,ref int fault);
         bool robotaWre = false;
         public void CountPages(string file, ref int str)
         {
             PdfReader pdfReader = new PdfReader(file);
-            str += pdfReader.NumberOfPages;
+            Rectangle page;
+            for (int i = 1; i <= pdfReader.NumberOfPages; i++)
+            {
+                page = pdfReader.GetCropBox(i);
+                float area = Utilities.PointsToMillimeters(page.Height) * Utilities.PointsToMillimeters(page.Width);
+                str += Convert.ToInt32(Math.Round(area / (A4H * A4W)));
+            }
         }
-        public void MakeItDone(string path,ref int dok, ref int str)
+        public void MakeItDone(string path,ref int dok, ref int str,ref int fault)
         {
             string[] files = Directory.GetFiles(path);
             string[] dirs = Directory.GetDirectories(path);
@@ -33,29 +36,38 @@ namespace SQLApp1.Liczenie_dokumentów
                 {
                     throw new Exception("Przerwano na żądanie użytkownika");
                 }
-                if (Path.GetExtension(file) == ".pdf")
+                if (Path.GetExtension(file) == ".pdf" && !Path.GetFileNameWithoutExtension(file).StartsWith("._"))
                 {
                     dok += 1;
-                    CountPages(file, ref str);
+                    try
+                    {
+                        CountPages(file, ref str);
+                    }
+                    catch(Exception e)
+                    {
+                        fault++;
+                        MessageBox.Show(null, "Wystąpił problem z plikiem\n" + file + "\nBłąd: " + e.Message, "Błąd podczas liczenia stron", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-                UpdateTBoxes(ref dok, ref str);
+                UpdateTBoxes(ref dok, ref str,ref fault);
             }
             foreach(string dir in dirs)
             {
-                MakeItDone(dir, ref dok, ref str);
+                MakeItDone(dir, ref dok, ref str,ref fault);
             }
         }
-        public void UpdateTBoxes(ref int dok, ref int str)
+        public void UpdateTBoxes(ref int dok, ref int str,ref int fault)
         {
-            if (textBox2.InvokeRequired || textBox3.InvokeRequired)
+            if (textBox2.InvokeRequired || textBox3.InvokeRequired || faultTextBox.InvokeRequired)
             {
                 StringArgReturningVoidDelegate d = new StringArgReturningVoidDelegate(UpdateTBoxes);
-                Invoke(d, new object[] { dok, str });
+                Invoke(d, new object[] { dok, str, fault });
             }
             else
             {
                 textBox2.Text = dok.ToString();
                 textBox3.Text = str.ToString();
+                faultTextBox.Text = fault.ToString();
             }
 
         }
@@ -108,21 +120,26 @@ namespace SQLApp1.Liczenie_dokumentów
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            int dok = 0, str = 0;
+            int dok = 0, str = 0, fault = 0 ;
             try
             {
-                MakeItDone(e.Argument as string, ref dok, ref str);
+                MakeItDone(e.Argument as string, ref dok, ref str,ref fault);
+                virtClick = true;
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Błąd: "+ex.Message);
+                MessageBox.Show(null,"Błąd: "+ex.Message,"Błąd!",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-
-            Licz_Click(null, null);
+            if (virtClick)
+            {
+                Licz_Click(null, null);
+                virtClick = false;
+            }
+            MessageBox.Show(null, "Zakończono liczenie plików PDF.", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
