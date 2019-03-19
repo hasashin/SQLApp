@@ -1,3 +1,0 @@
-﻿1>------ Kompilacja rozpoczęta: Projekt: SQLApp1, Konfiguracja: Release Any CPU ------
-1>  SQLApp1 -> C:\Users\dominikhazak\Source\Repos\SQLApp\SQLApp1\bin\Release\SQLApp1.exe
-========== Kompilacja: 1 zakończono powodzeniem, 0 zakończono niepowodzeniem, 0 zaktualizowano, 0 pominięto ==========
